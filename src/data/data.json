@@ -1,0 +1,188 @@
+{
+  "en": {
+    "modeSwitch": {
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode",
+      "switch1": "Turkish",
+      "switch": "Switch to"
+    },
+    "header": {
+      "nav": ["Skills", "Projects", "Let's Work Together"]
+    },
+    "hero": {
+      "name": "Özge Karabay",
+      "title1": "In pursuit of simplicity,",
+      "title2": "Exploring depth",
+      "headerAbout": "Hello, I'm Özge. I'm a front-end developer who creates projects that deliver excellent user experiences with simple yet effective designs. If you're looking for a developer to build solid and scalable frontend products, then let's create something amazing together!",
+      "heroButtons": ["Let's Work Together", "Github", "Linkedin"]
+    },
+    "skills": [
+      {
+        "title": "JavaScript",
+        "content": "My JavaScript skills include basic knowledge (variables, data structures, and control structures), functions (arrow functions and higher-order functions), DOM manipulation (element selection and event listeners), asynchronous programming (Promises and async/await), frameworks (React), debugging (console tools and error management), and working with RESTful APIs to fetch and process data. I'm continually improving myself to deliver effective and innovative solutions."
+      },
+      {
+        "title": "React",
+        "content": "My React skills include component structure, state management (using state and props), lifecycle methods, event handling, form processing, conditional rendering, routing with React Router, styled components, and integration with popular libraries (such as Redux and Axios). Additionally, I have experience in testing applications with tools like Jest and Enzyme. I'm constantly learning and delivering innovative solutions to enhance user experience."
+      },
+      {
+        "title": "Tailwind",
+        "content": "My Tailwind CSS skills include utility-first styling, component design, creating custom themes, responsive design principles, using Flexbox and Grid systems, utility customization, animation and transition effects, integrating with component libraries (such as daisyUI), and optimizing projects with Tailwind. I'm continually improving myself to create fast and effective user interfaces."
+      }
+    ],
+    "profile": {
+      "subProfile": [
+        {
+          "title": "Date of Birth",
+          "value": "06.11.1993"
+        },
+        {
+          "title": "City",
+          "value": "Ankara"
+        },
+        {
+          "title": "Education",
+          "value": "Gazi University, Industrial Engineering, Bachelor's Degree, 2018"
+        },
+        {
+          "title": "Preferred Role",
+          "value": "Frontend, UI"
+        }
+      ],
+      "about": {
+        "title": "About Me",
+        "content": "As a Frontend Developer with a growth mindset, I'm passionate about building user-friendly and modern web applications. To pursue my childhood dream, I've gained in-depth knowledge and skills in technologies like HTML, CSS, JavaScript, React.js, Tailwind CSS, and Redux. I'm open to innovations in the tech world and have a problem-solving mindset. I view each project as an opportunity to improve myself. I'm team-oriented and aim to add value by communicating effectively in projects. I look forward to tackling new challenges in the software world to push myself further. In the future, I aim to continue producing creative and performance-oriented solutions using modern technologies."
+      }
+    },
+    "projects": [
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
+      },
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
+      },
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Technological Meals",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.exampleproject.com",
+        "viewSite": "https://www.exampleproject.com"
+      }
+    ],
+    "footer": {
+      "catchword": "Are you ready to design the project of the future together?",
+      "mail": "karabayozge@gmail.com",
+      "links": ["Personal Blog", "Github", "Linkedin"]
+    },
+    "titles": {
+      "skills": "Skills",
+      "profile": "Profile",
+      "subProfile": "Profil",
+      "projects": "Projects"
+    }
+  },
+  "tr": {
+    "modeSwitch": {
+      "darkMode": "Karanlık Mod",
+      "ligthMode": "Aydınlık Mod",
+      "switch1": "İngilizce",
+      "switch": "'ye geç"
+    },
+    "header": {
+      "nav": ["Beceriler", "Projeler", "Beraber çalışalım"]
+    },
+    "hero": {
+      "name": "Özge Karabay",
+      "title1": "Sadelik peşinde,",
+      "title2": " Derinlik keşfeden",
+      "headerAbout": "Merhaba, ben Özge. Sade ama etkili tasarımlarla, mükemmel kullanıcı deneyimleri sunan projeler geliştiren bir front-end developer'ım. Eğer sağlam ve ölçeklenebilir frontend ürünleri yaratacak bir geliştirici arıyorsanız, o zaman gelin birlikte harikalar yaratalım!",
+      "heroButtons": ["Beraber çalışalım", "Github", "Linkedin"]
+    },
+    "skills": [
+      {
+        "title": "JavaScript",
+        "content": "JavaScript becerilerim arasında temel bilgi (değişkenler, veri yapıları ve kontrol yapıları), fonksiyonlar (ok fonksiyonları ve yüksek seviyeli fonksiyonlar), DOM manipülasyonu (eleman seçimi ve olay dinleyicileri), asenkron programlama (Promise'ler ve async/await), frameworkler (React), hata ayıklama (konsol araçları ve hata yönetimi) ve RESTful API'lerle veri alma ve işleme yer alıyor. Sürekli kendimi geliştirerek etkili ve yenilikçi çözümler üretiyorum."
+      },
+      {
+        "title": "React",
+        "content": "React becerilerim arasında bileşen yapısı, durum yönetimi (state ve props kullanımı), yaşam döngüsü yöntemleri, olay yönetimi, form işleme, koşullu render, React Router ile yönlendirme, stil bileşenleri ve popüler kütüphaneler (Redux, Axios gibi) ile entegrasyon bulunuyor. Ayrıca, test araçları (Jest, Enzyme) kullanarak uygulama testleri yapma deneyimim var. Sürekli kendimi geliştirerek kullanıcı deneyimini artıran etkili ve yenilikçi çözümler üretiyorum."
+      },
+      {
+        "title": "Tailwind",
+        "content": "Tailwind CSS becerilerim arasında faydalı sınıf tabanlı stil uygulamaları, bileşen tasarımı, özelleştirilmiş temalar oluşturma, responsive tasarım prensipleri, Flexbox ve Grid sistemleri kullanımı, stil düzenleme (utilities), animasyon ve geçiş efektleri, bileşen kütüphaneleri (daisyUI gibi) ile entegrasyon, ve Tailwind ile projelerde optimizasyon yapma bulunuyor. Sürekli kendimi geliştirerek hızlı ve etkili kullanıcı arayüzleri oluşturuyorum."
+      }
+    ],
+    "profile": {
+      "subProfile": [
+        {
+          "title": "Doğum Tarihi",
+          "value": "06.11.1993"
+        },
+        {
+          "title": "Şehir",
+          "value": "Ankara"
+        },
+        {
+          "title": "Eğitim",
+          "value": "Gazi Üniversitesi Endüstri Mühendisliği Lisans, 2018"
+        },
+        {
+          "title": "Tercih Edilen Rol",
+          "value": "Frontend, UI"
+        }
+      ],
+      "about": {
+        "title": "Hakkımda",
+        "content": "Öğrenmeye ve kendimi sürekli geliştirmeye odaklanan, büyüme zihniyetine sahip bir Frontend Developer olarak, kullanıcı dostu ve modern web uygulamaları geliştirme konusunda tutkuluyum. Çocukluk hayalimi gerçekleştirmek adına, HTML, CSS, JavaScript, React.js,Tailwind CSS ve Redux gibi teknolojilerde derinlemesine bilgi ve beceri kazandım. Teknoloji dünyasında yeniliklere açık, problem çözme odaklı bir yaklaşıma sahibim ve her projeyi kendimi geliştirmek için bir fırsat olarak görüyorum. Takım çalışmasına yatkın, verimli ve etkili iletişim kurarak projelerde değer yaratmayı hedefliyorum. Yazılım dünyasında karşılaşacağım yeni zorluklarla kendimi daha da ileri taşımak için sabırsızlanıyorum. Gelecekte, modern teknolojileri kullanarak yaratıcı ve performans odaklı çözümler üretmeye devam etmeyi amaçlıyorum."
+      }
+    },
+    "projects": [
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Teknolojik Yemekler",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.ornekproje.com",
+        "viewSite": "https://www.ornekproje.com"
+      },
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Teknolojik Yemekler",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.ornekproje.com",
+        "viewSite": "https://www.ornekproje.com"
+      },
+      {
+        "img": "src/data/images/react.svg",
+        "title": "Teknolojik Yemekler",
+        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        "technologies": ["react", "reactstrap", "grid"],
+        "github": "https://www.ornekproje.com",
+        "viewSite": "https://www.ornekproje.com"
+      }
+    ],
+    "footer": {
+      "catchword": "Geleceğin projesini birlikte tasarlamaya hazır mısınız?",
+      "mail": "karabayozge@gmail.com",
+      "links": ["Kişisel Blog", "Github", "Linkedin"]
+    },
+    "titles": {
+      "skills": "Yetenekler",
+      "profile": "Profil",
+      "subProfile": "Profil",
+      "projects": "Projeler"
+    }
+  }
+}
