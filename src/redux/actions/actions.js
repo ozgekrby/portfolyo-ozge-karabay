@@ -2,6 +2,7 @@ import axios from "axios";
 import data from '../../data/data.json';
 
 export const selectLang = (lang) => {
+
   return {
     type: 'SELECT_LANG',
     payload: lang,

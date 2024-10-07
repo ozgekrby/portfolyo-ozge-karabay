@@ -1,5 +1,6 @@
+
 const initialData = {
-  lang: "tr",
+  lang:localStorage.getItem("lang"),
   data: {
     modeSwitch: {},
     header: {},
@@ -21,11 +22,11 @@ const reducer = (state = initialData, action) => {
           [action.payload.section]: action.payload.data,
         },
       };
-    case 'SELECT_LANG':
+  case 'SELECT_LANG':
       return {
         ...state,
         lang: action.payload,
-      };
+      }; 
     default:
       return state;
   }
