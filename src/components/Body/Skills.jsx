@@ -10,7 +10,7 @@ export default function Skills() {
   }
 
   return (
-    <section className="flex flex-col gap-5">
+    <section className="flex flex-col gap-5" id="skills-section">
       <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left">
         {titles.skills}
       </h2>

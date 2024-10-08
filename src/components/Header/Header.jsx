@@ -7,6 +7,7 @@ export default function Header() {
   if (!header.nav || header.nav.length === 0) {
     return <div>Loading...</div>;
   }
+  const id = ["skills-section", "projects-section"];
 
   return (
     <header className="flex items-end p-4 space-y-4">
@@ -17,9 +18,22 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <nav className="flex w-2/3 justify-between text-secondary font-medium" aria-label="Main Navigation">
+      <nav
+        className="flex w-2/3 justify-between text-secondary font-medium"
+        aria-label="Main Navigation"
+      >
         {header.nav.map((item, index) => (
-          <p key={index} className="hover:text-light-blue transition-colors" role="menuitem">
+          <p
+            key={index}
+            className="hover:text-light-blue transition-colors cursor-pointer"
+            role="menuitem"
+            onClick={() => {
+              const element = document.getElementById(id[index]);
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             {item}
           </p>
         ))}

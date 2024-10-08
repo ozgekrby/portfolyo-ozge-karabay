@@ -10,7 +10,7 @@ export default function Projects() {
   }
 
   return (
-    <section>
+    <section id="projects-section">
       <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left mb-4 ">
         {titles.projects}
       </h2>

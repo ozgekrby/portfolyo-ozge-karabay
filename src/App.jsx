@@ -7,7 +7,8 @@ import Loading from "./components/Loading";
 import { retrievalData } from "./redux/actions/actions";
 import { getSystemLanguage } from "./hooks/getLanguage";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Hero = lazy(
   () =>
     new Promise((resolve) =>
@@ -63,6 +64,14 @@ function App() {
     dispatch(retrievalData(lang));
   }, [dispatch]);
 
+  useEffect(() => {
+    if (loading === false && lang === "tr") {
+      toast.info("Yönlendiriliyorsunuz...");
+    } else if (loading === false && lang === "en") {
+      toast.info("Redirecting...");
+    }
+  }, [loading]);
+
   return (
     <div
       className={
@@ -73,7 +82,11 @@ function App() {
     >
       <Suspense fallback={<Loading />}>
         <TransitionGroup>
-          <CSSTransition classNames="fade" timeout={300} key={loading ? "loading" : "loaded"}>
+          <CSSTransition
+            classNames="fade"
+            timeout={300}
+            key={loading ? "loading" : "loaded"}
+          >
             {loading === false ? (
               <>
                 {" "}
@@ -93,6 +106,18 @@ function App() {
           </CSSTransition>
         </TransitionGroup>
       </Suspense>
+      <ToastContainer
+        position="top-right"
+        autoClose={1400}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        style={{ marginTop: "2rem" }}
+      />
     </div>
   );
 }

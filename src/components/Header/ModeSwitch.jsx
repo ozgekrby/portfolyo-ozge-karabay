@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { retrievalData, selectLang } from "../../redux/actions/actions";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { getSystemLanguage } from "../../hooks/getLanguage";
+import { toast } from "react-toastify";
 
 export default function ModeSwitch() {
   const dispatch = useDispatch();
@@ -21,10 +22,25 @@ export default function ModeSwitch() {
     const newLang = lang === "tr" ? "en" : "tr";
     updateLang(newLang);
     dispatch(selectLang(newLang));
+    if (newLang === "tr") {
+      toast.info("Türkçe'ye geçildi");
+    } else if (newLang === "en") {
+      toast.info("Switched to English");
+    }
   };
 
   const handleMode = () => {
-    updateDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    updateDarkMode(newDarkMode);
+    if (newDarkMode === true && lang === "tr") {
+      toast.info("Karanlık Mode'a geçildi");
+    } else if (newDarkMode === false && lang === "tr") {
+      toast.info("Aydınlık Mode'a geçildi");
+    } else if (newDarkMode === true && lang === "en") {
+      toast.info("Switched to Dark Mode");
+    } else if (newDarkMode === false && lang === "en") {
+      toast.info("Switched to Light Mode");
+    }
   };
 
   useEffect(() => {
@@ -39,7 +55,10 @@ export default function ModeSwitch() {
   return (
     <div className="flex gap-6 items-center justify-end tracking-wider">
       <div className="flex items-center justify-center">
-        <label className="inline-flex items-center cursor-pointer" aria-label="Toggle dark mode">
+        <label
+          className="inline-flex items-center cursor-pointer"
+          aria-label="Toggle dark mode"
+        >
           <input
             type="checkbox"
             className="sr-only peer"
@@ -55,15 +74,24 @@ export default function ModeSwitch() {
       </div>
       <span className="text-lg ms-2 font-bold text-dark-languageDark">|</span>
       <div className="flex items-center justify-center">
-        <span onClick={handleLanguageChange} className="flex items-center" role="button" aria-label="Change language">
+        <span
+          onClick={handleLanguageChange}
+          className="flex items-center"
+          role="button"
+          aria-label="Change language"
+        >
           {lang === "tr" ? (
             <p className="text-lg ms-2 font-bold text-primary">
               {modeSwitch.switch1}{" "}
-              <span className="text-dark-languageDark">{modeSwitch.switch}</span>
+              <span className="text-dark-languageDark">
+                {modeSwitch.switch}
+              </span>
             </p>
           ) : (
             <p className="text-lg ms-2 font-bold text-primary">
-              <span className="text-lg ms-2 font-bold text-dark-languageDark">{modeSwitch.switch}</span>{" "}
+              <span className="text-lg ms-2 font-bold text-dark-languageDark">
+                {modeSwitch.switch}
+              </span>{" "}
               {modeSwitch.switch1}
             </p>
           )}
