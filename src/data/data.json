@@ -1,10 +1,10 @@
 {
   "en": {
     "modeSwitch": {
-      "darkMode": "Dark Mode",
-      "lightMode": "Light Mode",
-      "switch1": "Turkish",
-      "switch": "Switch to"
+      "darkMode": "DARK MODE",
+      "lightMode": "LIGHT MODE",
+      "switch1": "TURKISH",
+      "switch": "SWITCH TO"
     },
     "header": {
       "nav": ["Skills", "Projects", "Let's Work Together"]
@@ -14,7 +14,7 @@
       "title1": "In pursuit of simplicity,",
       "title2": "Exploring depth",
       "headerAbout": "Hello, I'm Özge. I'm a front-end developer who creates projects that deliver excellent user experiences with simple yet effective designs. If you're looking for a developer to build solid and scalable frontend products, then let's create something amazing together!",
-      "heroButtons": ["Let's Work Together", "Github", "Linkedin"]
+      "heroButtons": ["Hire Me", "Github", "Linkedin"]
     },
     "skills": [
       {
@@ -56,7 +56,7 @@
     },
     "projects": [
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
@@ -64,7 +64,7 @@
         "viewSite": "https://www.exampleproject.com"
       },
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
@@ -72,7 +72,7 @@
         "viewSite": "https://www.exampleproject.com"
       },
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Technological Meals",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
@@ -94,10 +94,10 @@
   },
   "tr": {
     "modeSwitch": {
-      "darkMode": "Karanlık Mod",
-      "ligthMode": "Aydınlık Mod",
-      "switch1": "İngilizce",
-      "switch": "'ye geç"
+      "darkMode": "KARANLIK MOD",
+      "lightMode": "AYDINLIK MOD",
+      "switch1": "İNGİLİZCE",
+      "switch": "'YE GEÇ"
     },
     "header": {
       "nav": ["Beceriler", "Projeler", "Beraber çalışalım"]
@@ -149,7 +149,7 @@
     },
     "projects": [
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Teknolojik Yemekler",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
@@ -157,7 +157,7 @@
         "viewSite": "https://www.ornekproje.com"
       },
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Teknolojik Yemekler",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],
@@ -165,7 +165,7 @@
         "viewSite": "https://www.ornekproje.com"
       },
       {
-        "img": "src/data/images/react.svg",
+        "img": "src/data/images/home-banner.png",
         "title": "Teknolojik Yemekler",
         "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         "technologies": ["react", "reactstrap", "grid"],

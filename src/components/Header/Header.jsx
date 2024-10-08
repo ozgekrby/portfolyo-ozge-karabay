@@ -9,10 +9,19 @@ export default function Header() {
   }
 
   return (
-    <div>
-      {header.nav.map((item, index) => (
-        <p key={index}>{item}</p>
-      ))}
-    </div>
+    <header className="flex items-end p-4 space-y-4 items-center">
+      <div className="w-full flex justify-between items-center">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-light-lavender dark:bg-primary">
+          <div className="text-2xl font-bold rotate-30 text-light-lightpink dark:text-dark-periwinkle">
+            O
+          </div>
+        </div>
+      </div>
+      <nav className="flex w-2/3 justify-between text-secondary font-medium">
+        {header.nav.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
+      </nav>
+    </header>
   );
 }
