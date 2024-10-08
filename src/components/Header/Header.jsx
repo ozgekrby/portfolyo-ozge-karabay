@@ -9,7 +9,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex items-end p-4 space-y-4 items-center">
+    <header className="flex items-end p-4 space-y-4">
       <div className="w-full flex justify-between items-center">
         <div className="flex items-center justify-center w-16 h-16 rounded-full bg-light-lavender dark:bg-primary">
           <div className="text-2xl font-bold rotate-30 text-light-lightpink dark:text-dark-periwinkle">
@@ -17,9 +17,11 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <nav className="flex w-2/3 justify-between text-secondary font-medium">
+      <nav className="flex w-2/3 justify-between text-secondary font-medium" aria-label="Main Navigation">
         {header.nav.map((item, index) => (
-          <p key={index}>{item}</p>
+          <p key={index} className="hover:text-light-blue transition-colors" role="menuitem">
+            {item}
+          </p>
         ))}
       </nav>
     </header>

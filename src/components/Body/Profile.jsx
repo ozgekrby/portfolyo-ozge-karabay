@@ -10,14 +10,14 @@ export default function Profile() {
   }
 
   return (
-    <section className="flex flex-col gap-5">
+    <section className="flex flex-col lg:gap-5 gap-3">
       <hr className="mt-6 border-t border-dark-lightPurple" />
-      <h2 className="text-5xl font-semibold text-light-black text-left">
+      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left">
         {titles.profile}
       </h2>
-      <div className="flex gap-10">
-        <div className="w-1/3 flex flex-col gap-5">
-          <h3 className="text-3xl font-medium text-left tracking-wider text-primary">
+      <div className="lg:flex-row flex-col flex lg:gap-10 gap-5">
+        <div className="lg:w-1/3 w-full flex flex-col gap-3">
+          <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
             {titles.subProfile}
           </h3>
           <div className="flex flex-col">
@@ -34,13 +34,13 @@ export default function Profile() {
               ))}
           </div>
         </div>
-        <div className="w-1/2 flex flex-col gap-5">
+        <div className="lg:w-1/2 w-full flex flex-col gap-5">
           {profile.about && (
             <>
-              <h3 className="text-3xl font-medium text-left tracking-wider text-primary">
+              <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
                 {profile.about.title}
               </h3>
-              <p className="text-s font-normal text-left text-secondary">
+              <p className="lg:text-s text-xs font-normal text-left text-secondary">
                 {profile.about.content}
               </p>
             </>
