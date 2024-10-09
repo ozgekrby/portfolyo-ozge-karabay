@@ -42,7 +42,7 @@ export default {
           darkGray: "#383838",
           darkerGray: "#141414",
           aquaBlue: "#0BA6F6",
-          green: "#17D18B",
+          green: "#17D18B", 
           lightGray2: "#E1E1FF",
           periwinkle: "#8F88FF",
           buttonColor: "#3A3A3A",

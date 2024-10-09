@@ -7,7 +7,7 @@ export default function Header() {
   if (!header.nav || header.nav.length === 0) {
     return <div>Loading...</div>;
   }
-  const id = ["skills-section", "projects-section"];
+  const id = ["skills-section", "projects-section","contact-section"];
 
   return (
     <header className="flex items-end p-4 space-y-4">
@@ -25,7 +25,7 @@ export default function Header() {
         {header.nav.map((item, index) => (
           <p
             key={index}
-            className="hover:text-light-blue transition-colors cursor-pointer"
+            className="hover:text-light-blue transition-colors cursor-pointer hover:border dark:border-none py-2 px-4 rounded flex items-center  dark:text-secondary dark:border hover:dark:text-black hover:dark:bg-dark-lightGray"
             role="menuitem"
             onClick={() => {
               const element = document.getElementById(id[index]);

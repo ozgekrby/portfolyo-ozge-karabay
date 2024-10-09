@@ -53,10 +53,6 @@ const ModeSwitch = lazy(
 );
 
 function App() {
-  const [darkMode] = useLocalStorage(
-    "darkMode",
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
   const loading = useSelector((state) => state.data.loading);
   const [lang] = useLocalStorage("lang", getSystemLanguage());
   const dispatch = useDispatch();
@@ -74,11 +70,8 @@ function App() {
 
   return (
     <div
-      className={
-        darkMode
-          ? "dark bg-slate-900 h-screen font-sans flex flex-col gap-0"
-          : "font-sans flex flex-col gap-5"
-      }
+      className="font-sans flex flex-col gap-5"
+      
     >
       <Suspense fallback={<Loading />}>
         <TransitionGroup>

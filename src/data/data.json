@@ -14,7 +14,8 @@
       "title1": "In pursuit of simplicity,",
       "title2": "Exploring depth",
       "headerAbout": "Hello, I'm Özge. I'm a front-end developer who creates projects that deliver excellent user experiences with simple yet effective designs. If you're looking for a developer to build solid and scalable frontend products, then let's create something amazing together!",
-      "heroButtons": ["Hire Me", "Github", "Linkedin"]
+      "heroButtons": ["Hire Me", "Github", "Linkedin"],
+      "links":["","https://github.com/ozgekrby","https://www.linkedin.com/in/ozgekarabay/"]
     },
     "skills": [
       {
@@ -56,28 +57,28 @@
     },
     "projects": [
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Technological Meals",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
-        "viewSite": "https://www.exampleproject.com"
+        "img": "src/data/images/ip-address-tracker.png",
+        "title": "IP Address Tracker",
+        "description": "The IP Address Tracker is an interactive application that allows users to track their IP addresses and visualize their locations on a map. With its user-friendly interface, it performs IP address queries quickly and efficiently. The application integrates map functionality using React and the Leaflet library. Axios is used to retrieve data from the API.",
+        "technologies": ["react", "leaflet", "axios"],
+        "github": "https://github.com/ozgekrby/ip_address_tracker/tree/main",
+        "viewSite": "https://ip-address-tracker-lime-chi.vercel.app/"
       },
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Technological Meals",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
-        "viewSite": "https://www.exampleproject.com"
+        "img": "src/data/images/coffee-list.png",
+        "title": "Coffee List",
+        "description": "Coffee List is a simple application where businesses can explore different types of coffee and list their available stock. The application is developed using React and Reactstrap with a stylish and responsive design. Users can obtain information about coffee types and view consumer ratings for the coffees in stock. Axios is used to provide data.",
+        "technologies": ["react", "reactstrap", "axios"],
+        "github": "https://github.com/ozgekrby/react-coffee-list",
+        "viewSite": "https://react-coffee-list.vercel.app/"
       },
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Technological Meals",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.exampleproject.com",
-        "viewSite": "https://www.exampleproject.com"
+        "img": "src/data/images/register-form.png",
+        "title": "Register Form",
+        "description": "The Register Form is a modern registration form application that allows users to create accounts quickly and effectively. Designed with a user-friendly interface, it enables users to easily enter the required information. MUI (Material-UI) provides a stylish appearance, while React Hook Form facilitates easy management and validation of form data. The application enhances the user experience by offering instant error messages for user feedback. The project offers flexibility for developers with customization options.",
+        "technologies": ["react", "MUI", "react hook form"],
+        "github": "https://github.com/ozgekrby/register-form-useForm",
+        "viewSite": "register-form-use-form-rr1e.vercel.app"
       }
     ],
     "footer": {
@@ -107,7 +108,8 @@
       "title1": "Sadelik peşinde,",
       "title2": " Derinlik keşfeden",
       "headerAbout": "Merhaba, ben Özge. Sade ama etkili tasarımlarla, mükemmel kullanıcı deneyimleri sunan projeler geliştiren bir front-end developer'ım. Eğer sağlam ve ölçeklenebilir frontend ürünleri yaratacak bir geliştirici arıyorsanız, o zaman gelin birlikte harikalar yaratalım!",
-      "heroButtons": ["Beraber çalışalım", "Github", "Linkedin"]
+      "heroButtons": ["İşe Al", "Github", "Linkedin"],
+      "links":["","https://github.com/ozgekrby","https://www.linkedin.com/in/ozgekarabay/"]
     },
     "skills": [
       {
@@ -149,28 +151,28 @@
     },
     "projects": [
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Teknolojik Yemekler",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.ornekproje.com",
-        "viewSite": "https://www.ornekproje.com"
+        "img": "src/data/images/ip-address-tracker.png",
+        "title": "IP Address Tracker",
+        "description": " IP Address Tracker, kullanıcıların IP adreslerini takip etmelerine ve konumlarını harita üzerinde görselleştirmelerine olanak tanıyan etkileşimli bir uygulamadır. Kullanıcı dostu arayüzü ile IP adresi sorgulama işlemlerini hızlı ve etkili bir şekilde gerçekleştirir. Uygulama, React ve Leaflet kütüphanelerini kullanarak harita entegrasyonu sağlar. Axios, API'den veri almak için kullanılır.",
+        "technologies": ["react", "leaflet", "axios"],
+        "github": "https://github.com/ozgekrby/ip_address_tracker/tree/main",
+        "viewSite": "https://ip-address-tracker-lime-chi.vercel.app/"
       },
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Teknolojik Yemekler",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.ornekproje.com",
-        "viewSite": "https://www.ornekproje.com"
+        "img": "src/data/images/coffee-list.png",
+        "title": "Coffee List",
+        "description": "Coffee List, işletmelerin farklı kahve türlerini keşfedebileceği ve stoktaki kahvelerini listeleyebileceği basit bir uygulamadır. Uygulama, React ve Reactstrap kullanılarak şık ve duyarlı bir tasarım ile geliştirilmiştir. Kullanıcılar, kahve türleri hakkında bilgi alabilir ve stoktaki kahvelerin tüketici puanını görebilirler. Axios, veri sağlamak için kullanılır.",
+        "technologies": ["react", "reactstrap", "axios"],
+        "github": "https://github.com/ozgekrby/react-coffee-list",
+        "viewSite": "https://react-coffee-list.vercel.app/"
       },
       {
-        "img": "src/data/images/home-banner.png",
-        "title": "Teknolojik Yemekler",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "technologies": ["react", "reactstrap", "grid"],
-        "github": "https://www.ornekproje.com",
-        "viewSite": "https://www.ornekproje.com"
+        "img": "src/data/images/register-form.png",
+        "title": "Register Form",
+        "description": "Register Form, kullanıcıların hızlı ve etkili bir şekilde hesap oluşturmalarına olanak tanıyan modern bir kayıt formu uygulamasıdır. Bu uygulama, kullanıcı dostu bir arayüz ile tasarlanmış olup, kullanıcıların gerekli bilgileri kolayca girmesini sağlar. MUI (Material-UI) ile şık bir görünüm sağlanırken, React Hook Form sayesinde form verileri kolayca yönetilir ve doğrulanır. Uygulama, kullanıcı geri bildirimleri için anlık hata mesajları sunarak kullanıcı deneyimini artırır. Proje, özelleştirme seçenekleri ile birlikte geliştiricilere esneklik sunmaktadır.",
+        "technologies": ["react", "MUI", "react hook form"],
+        "github": "https://github.com/ozgekrby/register-form-useForm",
+        "viewSite": "register-form-use-form-rr1e.vercel.app"
       }
     ],
     "footer": {

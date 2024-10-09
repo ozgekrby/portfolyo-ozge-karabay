@@ -11,10 +11,10 @@ export default function Projects() {
 
   return (
     <section id="projects-section">
-      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left mb-4 ">
+      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left mb-4 dark:text-dark-blueGray ">
         {titles.projects}
       </h2>
-      <div className="flex flex-wrap lg:flex-row justify-between sm:flex-col sm:m-auto lg:-w-full">
+      <div className="flex flex-wrap lg:flex-row justify-between sm:flex-col sm:m-auto lg:-w-full h-3/4">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -27,18 +27,20 @@ export default function Projects() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <p className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
+            <p className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
               {project.title}
             </p>
-            <p className="text-xs font-normal text-left text-secondary">
+            <div className="w-full h-1/3">
+            <p className="text-xs font-normal text-left text-secondary dark:text-white">
               {project.description}
             </p>
+            </div>
 
             <div className="flex space-x-2">
               {project.technologies.map((tech, techIndex) => (
                 <button
                   key={techIndex}
-                  className="bg-white text-tertiary border border-tertiary py-1 px-2 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-lightGray dark:border dark:border-dark-lightGray hover:dark:text-black hover:dark:bg-dark-lightGray"
+                  className="bg-white text-tertiary border border-tertiary py-1 px-2 rounded flex items-center hover:bg-tertiary hover:text-white hover:border-transparent dark:bg-dark-darkGray dark:text-dark-periwinkle dark:border dark:border-dark-periwinkle hover:dark:text-black hover:dark:bg-dark-lightGray"
                 >
                   {tech}
                 </button>
@@ -47,13 +49,13 @@ export default function Projects() {
             <div className="flex justify-between">
               <a
                 href={project.github}
-                className="text-tertiary underline font-medium"
+                className="text-tertiary underline font-medium dark:text-dark-lightGray"
               >
                 GitHub
               </a>
               <a
                 href={project.viewSite}
-                className="text-tertiary underline font-medium"
+                className="text-tertiary underline font-medium dark:text-dark-lightGray"
               >
                 View Site
               </a>

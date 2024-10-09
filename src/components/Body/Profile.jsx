@@ -12,22 +12,22 @@ export default function Profile() {
   return (
     <section className="flex flex-col lg:gap-5 gap-3">
       <hr className="mt-6 border-t border-dark-lightPurple" />
-      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left">
+      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left dark:text-dark-blueGray">
         {titles.profile}
       </h2>
       <div className="lg:flex-row flex-col flex lg:gap-10 gap-5">
         <div className="lg:w-1/3 w-full flex flex-col gap-3">
-          <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
+          <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
             {titles.subProfile}
           </h3>
           <div className="flex flex-col">
             {profile.subProfile &&
               profile.subProfile.map((item, index) => (
                 <div key={index} className="flex">
-                  <div className="w-1/2">
+                  <div className="w-1/2 dark:text-white">
                     <strong>{item.title}:</strong>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 dark:text-white">
                     <span>{item.value}</span>
                   </div>
                 </div>
@@ -37,10 +37,10 @@ export default function Profile() {
         <div className="lg:w-1/2 w-full flex flex-col gap-5">
           {profile.about && (
             <>
-              <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
+              <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
                 {profile.about.title}
               </h3>
-              <p className="lg:text-s text-xs font-normal text-left text-secondary">
+              <p className="lg:text-s text-xs font-normal text-left text-secondary dark:text-white">
                 {profile.about.content}
               </p>
             </>

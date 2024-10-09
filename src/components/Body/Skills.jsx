@@ -11,16 +11,16 @@ export default function Skills() {
 
   return (
     <section className="flex flex-col gap-5" id="skills-section">
-      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left">
+      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left dark:text-dark-blueGray">
         {titles.skills}
       </h2>
       <div className="flex flex-wrap lg:justify-between justify-center">
         {skills.map((item, index) => (
           <div key={index} className="lg:w-1/4 w-full p-2 flex flex-col gap-5">
-            <p className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary">
+            <p className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
               {item.title}
             </p>
-            <p className="text-xs font-normal text-left text-secondary">
+            <p className="text-xs font-normal text-left text-secondary dark:text-white">
               {item.content}
             </p>
           </div>
