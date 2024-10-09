@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
       <div className="lg:w-1/2 w-full mt-5 lg:mt-0">
         <img
-          src="src/data/images/pp.png"
+          src="images/pp.png"
           className="rounded-2xl w-full object-cover"
         />
       </div>

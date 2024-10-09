@@ -57,7 +57,7 @@
     },
     "projects": [
       {
-        "img": "src/data/images/ip-address-tracker.png",
+        "img": "images/ip-address-tracker.png",
         "title": "IP Address Tracker",
         "description": "The IP Address Tracker is an interactive application that allows users to track their IP addresses and visualize their locations on a map. With its user-friendly interface, it performs IP address queries quickly and efficiently. The application integrates map functionality using React and the Leaflet library. Axios is used to retrieve data from the API.",
         "technologies": ["react", "leaflet", "axios"],
@@ -65,7 +65,7 @@
         "viewSite": "https://ip-address-tracker-lime-chi.vercel.app/"
       },
       {
-        "img": "src/data/images/coffee-list.png",
+        "img": "images/coffee-list.png",
         "title": "Coffee List",
         "description": "Coffee List is a simple application where businesses can explore different types of coffee and list their available stock. The application is developed using React and Reactstrap with a stylish and responsive design. Users can obtain information about coffee types and view consumer ratings for the coffees in stock. Axios is used to provide data.",
         "technologies": ["react", "reactstrap", "axios"],
@@ -73,7 +73,7 @@
         "viewSite": "https://react-coffee-list.vercel.app/"
       },
       {
-        "img": "src/data/images/register-form.png",
+        "img": "images/register-form.png",
         "title": "Register Form",
         "description": "The Register Form is a modern registration form application that allows users to create accounts quickly and effectively. Designed with a user-friendly interface, it enables users to easily enter the required information. MUI (Material-UI) provides a stylish appearance, while React Hook Form facilitates easy management and validation of form data. The application enhances the user experience by offering instant error messages for user feedback. The project offers flexibility for developers with customization options.",
         "technologies": ["react", "MUI", "react hook form"],
@@ -151,7 +151,7 @@
     },
     "projects": [
       {
-        "img": "src/data/images/ip-address-tracker.png",
+        "img": "images/ip-address-tracker.png",
         "title": "IP Address Tracker",
         "description": " IP Address Tracker, kullanıcıların IP adreslerini takip etmelerine ve konumlarını harita üzerinde görselleştirmelerine olanak tanıyan etkileşimli bir uygulamadır. Kullanıcı dostu arayüzü ile IP adresi sorgulama işlemlerini hızlı ve etkili bir şekilde gerçekleştirir. Uygulama, React ve Leaflet kütüphanelerini kullanarak harita entegrasyonu sağlar. Axios, API'den veri almak için kullanılır.",
         "technologies": ["react", "leaflet", "axios"],
@@ -159,7 +159,7 @@
         "viewSite": "https://ip-address-tracker-lime-chi.vercel.app/"
       },
       {
-        "img": "src/data/images/coffee-list.png",
+        "img": "images/coffee-list.png",
         "title": "Coffee List",
         "description": "Coffee List, işletmelerin farklı kahve türlerini keşfedebileceği ve stoktaki kahvelerini listeleyebileceği basit bir uygulamadır. Uygulama, React ve Reactstrap kullanılarak şık ve duyarlı bir tasarım ile geliştirilmiştir. Kullanıcılar, kahve türleri hakkında bilgi alabilir ve stoktaki kahvelerin tüketici puanını görebilirler. Axios, veri sağlamak için kullanılır.",
         "technologies": ["react", "reactstrap", "axios"],
@@ -167,7 +167,7 @@
         "viewSite": "https://react-coffee-list.vercel.app/"
       },
       {
-        "img": "src/data/images/register-form.png",
+        "img": "images/register-form.png",
         "title": "Register Form",
         "description": "Register Form, kullanıcıların hızlı ve etkili bir şekilde hesap oluşturmalarına olanak tanıyan modern bir kayıt formu uygulamasıdır. Bu uygulama, kullanıcı dostu bir arayüz ile tasarlanmış olup, kullanıcıların gerekli bilgileri kolayca girmesini sağlar. MUI (Material-UI) ile şık bir görünüm sağlanırken, React Hook Form sayesinde form verileri kolayca yönetilir ve doğrulanır. Uygulama, kullanıcı geri bildirimleri için anlık hata mesajları sunarak kullanıcı deneyimini artırır. Proje, özelleştirme seçenekleri ile birlikte geliştiricilere esneklik sunmaktadır.",
         "technologies": ["react", "MUI", "react hook form"],
