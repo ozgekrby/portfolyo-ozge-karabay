@@ -16,7 +16,8 @@ export default function ModeSwitch() {
 
   useEffect(() => {
     dispatch(retrievalData(lang));
-  }, [dispatch, lang]);
+  }, [dispatch,lang]);
+
 
   const handleLanguageChange = () => {
     const newLang = lang === "tr" ? "en" : "tr";

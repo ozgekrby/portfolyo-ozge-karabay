@@ -9,42 +9,12 @@ import { getSystemLanguage } from "./hooks/getLanguage";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Hero = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Body/Hero")), 2000)
-    )
-);
-const Skills = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Body/Skills")), 2000)
-    )
-);
-const Profile = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Body/Profile")), 2000)
-    )
-);
-const Projects = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Body/Projects")), 2000)
-    )
-);
-const Footer = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Footer/Footer")), 2000)
-    )
-);
-const Header = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Header/Header")), 2000)
-    )
-);
+const Hero = lazy(() => import("./components/Body/Hero"));
+const Skills = lazy(() => import("./components/Body/Skills"));
+const Profile = lazy(() => import("./components/Body/Profile"));
+const Projects = lazy(() => import("./components/Body/Projects"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+const Header = lazy(() => import("./components/Header/Header"));
 const ModeSwitch = lazy(
   () =>
     new Promise((resolve) =>
@@ -56,9 +26,10 @@ function App() {
   const loading = useSelector((state) => state.data.loading);
   const [lang] = useLocalStorage("lang", getSystemLanguage());
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(retrievalData(lang));
-  }, [dispatch]);
+  }, [dispatch,lang]);
 
   useEffect(() => {
     if (loading === false && lang === "tr") {
@@ -80,9 +51,7 @@ function App() {
             timeout={300}
             key={loading ? "loading" : "loaded"}
           >
-            {loading === false ? (
-              <>
-                {" "}
+            <>
                 <div className="w-4/5 m-auto mt-4 flex flex-col gap-7">
                   <ModeSwitch />
                   <Header />
@@ -92,10 +61,7 @@ function App() {
                   <Projects />
                 </div>
                 <Footer />
-              </>
-            ) : (
-              <Loading />
-            )}
+                </>
           </CSSTransition>
         </TransitionGroup>
       </Suspense>
