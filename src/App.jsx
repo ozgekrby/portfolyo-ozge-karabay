@@ -26,10 +26,9 @@ function App() {
   const loading = useSelector((state) => state.data.loading);
   const [lang] = useLocalStorage("lang", getSystemLanguage());
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(retrievalData(lang));
-  }, [dispatch,lang]);
+  }, [dispatch]);
 
   useEffect(() => {
     if (loading === false && lang === "tr") {
@@ -51,11 +50,7 @@ function App() {
             timeout={300}
             key={loading ? "loading" : "loaded"}
           >
-<<<<<<< HEAD
-            <>
-=======
               <>
->>>>>>> dev
                 <div className="w-4/5 m-auto mt-4 flex flex-col gap-7">
                   <ModeSwitch />
                   <Header />
@@ -65,11 +60,7 @@ function App() {
                   <Projects />
                 </div>
                 <Footer />
-<<<<<<< HEAD
-                </>
-=======
               </>
->>>>>>> dev
           </CSSTransition>
         </TransitionGroup>
       </Suspense>
