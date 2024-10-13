@@ -4,14 +4,9 @@ import { useSelector } from "react-redux";
 export default function Profile() {
   const profile = useSelector((state) => state.data.profile);
   const titles = useSelector((state) => state.data.titles);
-
-  if (!profile || !titles) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <section className="flex flex-col lg:gap-5 gap-3">
-      <hr className="mt-6 border-t border-dark-lightPurple" />
+    <section className="flex flex-col lg:gap-9 gap-5 ">
+      <hr className="mt-6 border-t border-dark-lightPurple lg:mb-4" />
       <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left dark:text-dark-blueGray">
         {titles.profile}
       </h2>
@@ -20,11 +15,11 @@ export default function Profile() {
           <h3 className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
             {titles.subProfile}
           </h3>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-3">
             {profile.subProfile &&
               profile.subProfile.map((item, index) => (
                 <div key={index} className="flex">
-                  <div className="w-1/2 dark:text-white">
+                  <div className="w-1/2 dark:text-white flex">
                     <strong>{item.title}:</strong>
                   </div>
                   <div className="w-1/2 dark:text-white">

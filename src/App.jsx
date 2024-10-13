@@ -1,69 +1,62 @@
 import "./index.css";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
-import { lazy, Suspense, useEffect } from "react";
+import { useEffect } from "react";
 import { useLocalStorage } from "./hooks/useLocalStorage";
-import Loading from "./components/Loading";
 import { retrievalData } from "./redux/actions/actions";
 import { getSystemLanguage } from "./hooks/getLanguage";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Hero = lazy(() => import("./components/Body/Hero"));
-const Skills = lazy(() => import("./components/Body/Skills"));
-const Profile = lazy(() => import("./components/Body/Profile"));
-const Projects = lazy(() => import("./components/Body/Projects"));
-const Footer = lazy(() => import("./components/Footer/Footer"));
-const Header = lazy(() => import("./components/Header/Header"));
-const ModeSwitch = lazy(
-  () =>
-    new Promise((resolve) =>
-      setTimeout(() => resolve(import("./components/Header/ModeSwitch")), 2000)
-    )
-);
+import Error from "./components/Error";
+import Hero from "./components/Body/Hero";
+import Skills from "./components/Body/Skills";
+import Profile from "./components/Body/Profile";
+import Projects from "./components/Body/Projects";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import ModeSwitch from "./components/Header/ModeSwitch";
+import Loading from "./components/Loading";
 
 function App() {
-  const loading = useSelector((state) => state.data.loading);
+  const loading = useSelector((state) => state.loading);
+  const error = useSelector((state) => state.error);
   const [lang] = useLocalStorage("lang", getSystemLanguage());
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(retrievalData(lang));
-  }, [dispatch]);
+  }, [dispatch, lang]);
 
   useEffect(() => {
-    if (loading === false && lang === "tr") {
-      toast.info("Yönlendiriliyorsunuz...");
-    } else if (loading === false && lang === "en") {
-      toast.info("Redirecting...");
+    if (error.length > 0) {
+      if (lang === "tr") {
+        toast.error("Veri yüklenemedi");
+      } else {
+        toast.error("Data loading failed");
+      }
     }
-  }, [loading]);
+  }, [error, lang]);
 
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    <div
-      className="font-sans flex flex-col gap-5"
-      
-    >
-      <Suspense fallback={<Loading />}>
-        <TransitionGroup>
-          <CSSTransition
-            classNames="fade"
-            timeout={300}
-            key={loading ? "loading" : "loaded"}
-          >
-              <>
-                <div className="w-4/5 m-auto mt-4 flex flex-col gap-7">
-                  <ModeSwitch />
-                  <Header />
-                  <Hero />
-                  <Skills />
-                  <Profile />
-                  <Projects />
-                </div>
-                <Footer />
-              </>
-          </CSSTransition>
-        </TransitionGroup>
-      </Suspense>
+    <div className="font-sans flex flex-col gap-5 w-full">
+      {error.length > 0 ? (
+        <Error />
+      ) : (
+        <>
+          <div className="w-4/5 m-auto mt-4 flex flex-col gap-7">
+            <ModeSwitch />
+            <Header />
+            <Hero />
+            <Skills />
+            <Profile />
+            <Projects />
+          </div>
+          <Footer />
+        </>
+      )}
       <ToastContainer
         position="top-right"
         autoClose={1400}

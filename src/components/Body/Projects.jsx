@@ -5,12 +5,11 @@ export default function Projects() {
   const projects = useSelector((state) => state.data.projects);
   const titles = useSelector((state) => state.data.titles);
 
-  if (!projects || !titles) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <section id="projects-section">
+    <section
+      id="projects-section"
+      className="flex flex-col lg:gap-9 lg:mb-7 gap-5"
+    >
       <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left mb-4 dark:text-dark-blueGray ">
         {titles.projects}
       </h2>
@@ -18,7 +17,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="lg:w-1/4 w-full p-2 flex flex-col gap-4 lg:mb-0 mb-6"
+            className="lg:w-1/4 w-full flex flex-col gap-4 lg:mb-0 mb-6"
           >
             <div className="overflow-hidden relative h-48 lg:h-64">
               <img
@@ -31,9 +30,9 @@ export default function Projects() {
               {project.title}
             </p>
             <div className="w-full h-1/3">
-            <p className="text-xs font-normal text-left text-secondary dark:text-white">
-              {project.description}
-            </p>
+              <p className="text-xs font-normal text-left text-secondary dark:text-white">
+                {project.description}
+              </p>
             </div>
 
             <div className="flex space-x-2">

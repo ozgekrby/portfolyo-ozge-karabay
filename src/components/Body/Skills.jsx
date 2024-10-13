@@ -5,18 +5,19 @@ export default function Skills() {
   const skills = useSelector((state) => state.data.skills);
   const titles = useSelector((state) => state.data.titles);
 
-  if (!skills || !titles) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <section className="flex flex-col gap-5" id="skills-section">
-      <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left dark:text-dark-blueGray">
-        {titles.skills}
-      </h2>
-      <div className="flex flex-wrap lg:justify-between justify-center">
+    <section
+      className="flex flex-col lg:gap-9 gap-5 items-start"
+      id="skills-section"
+    >
+      <div>
+        <h2 className="lg:text-5xl text-3xl font-semibold text-light-black text-left dark:text-dark-blueGray">
+          {titles.skills}
+        </h2>
+      </div>
+      <div className="flex flex-wrap lg:justify-between gap-5">
         {skills.map((item, index) => (
-          <div key={index} className="lg:w-1/4 w-full p-2 flex flex-col gap-5">
+          <div key={index} className="lg:w-1/4 w-full flex flex-col gap-5">
             <p className="lg:text-3xl text-2xl font-medium text-left tracking-wider text-primary dark:text-dark-softPurple">
               {item.title}
             </p>

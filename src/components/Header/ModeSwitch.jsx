@@ -16,8 +16,7 @@ export default function ModeSwitch() {
 
   useEffect(() => {
     dispatch(retrievalData(lang));
-  }, [dispatch,lang]);
-
+  }, [dispatch, lang]);
 
   const handleLanguageChange = () => {
     const newLang = lang === "tr" ? "en" : "tr";
@@ -47,14 +46,14 @@ export default function ModeSwitch() {
     const bodyClass = document.body.classList;
     if (darkMode) {
       bodyClass.add("dark", "bg-slate-900");
-    } else if(!darkMode) {
+    } else if (!darkMode) {
       bodyClass.remove("dark", "bg-slate-900");
     }
   }, [darkMode]);
 
   return (
-    <div className="flex gap-6 items-center justify-end tracking-wider">
-      <div className="flex items-center justify-center">
+    <div className="flex gap-6 items-center justify-center tracking-wider lg:justify-end">
+      <div className="flex items-center justify-center w-1/2 lg:w-1/6">
         <label
           className="inline-flex items-center cursor-pointer"
           aria-label="Toggle dark mode"
@@ -66,14 +65,15 @@ export default function ModeSwitch() {
             checked={darkMode}
             aria-checked={darkMode}
           />
-          <div className="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-          <span className="text-sm ms-2 font-bold text-dark-languageDark dark:text-dark-gray">
+          <div className="relative w-10 h-5 sm:w-12 sm:h-6 md:w-14 md:h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 sm:after:h-5 sm:after:w-5 md:after:h-6 md:after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+
+          <span className="text-[0.5rem] sm:text-xs lg:text-sm ms-2 font-bold text-dark-languageDark dark:text-dark-gray">
             {darkMode ? modeSwitch.darkMode : modeSwitch.lightMode}
           </span>
         </label>
       </div>
       <span className="text-lg ms-2 font-bold text-dark-languageDark">|</span>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center w-1/2 lg:w-1/6">
         <span
           onClick={handleLanguageChange}
           className="flex items-center"
@@ -81,15 +81,15 @@ export default function ModeSwitch() {
           aria-label="Change language"
         >
           {lang === "tr" ? (
-            <p className="text-sm ms-2 font-bold text-primary dark:text-dark-lightPurple">
+            <p className="text-[0.5rem] sm:text-xs lg:text-sm font-bold text-primary dark:text-dark-lightPurple">
               {modeSwitch.switch1}{" "}
-              <span className="text-dark-languageDark">
+              <span className=" text-[0.5rem] sm:text-xs lg:text-sm text-dark-languageDark">
                 {modeSwitch.switch}
               </span>
             </p>
           ) : (
-            <p className="text-sm ms-2 font-bold text-primary dark:text-dark-lightPurple">
-              <span className="text-sm ms-2 font-bold text-dark-languageDark">
+            <p className="text-[0.5rem] sm:text-xs lg:text-sm ms-2 font-bold text-primary dark:text-dark-lightPurple">
+              <span className="text-[0.5rem] sm:text-xs lg:text-sm font-bold text-dark-languageDark">
                 {modeSwitch.switch}
               </span>{" "}
               {modeSwitch.switch1}

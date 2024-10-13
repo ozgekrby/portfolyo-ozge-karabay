@@ -4,10 +4,8 @@ import data from "../../data/data.json";
 
 export const retrievalData = (lang) => {
   return (dispatch) => {
-
     const storedData = sessionStorage.getItem("fetchedData");
     const isDataLoaded = sessionStorage.getItem("dataLoaded");
-
 
     if (isDataLoaded === "true" && storedData) {
       const parsedData = JSON.parse(storedData);
@@ -28,9 +26,8 @@ export const retrievalData = (lang) => {
           payload: { section, data: parsedData[lang][section] },
         });
       });
-      return; 
+      return;
     }
-
 
     fetchData("/workintech", data)
       .then((response) => {
@@ -53,12 +50,15 @@ export const retrievalData = (lang) => {
           });
         });
 
-
         sessionStorage.setItem("fetchedData", JSON.stringify(response.data));
         sessionStorage.setItem("dataLoaded", "true");
       })
       .catch((error) => {
         console.log(error);
+        dispatch({
+          type: "SET_ERROR",
+          payload: error.message,
+        });
       });
   };
 };

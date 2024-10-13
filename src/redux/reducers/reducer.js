@@ -1,5 +1,6 @@
 const initialData = {
   loading: true,
+  error: "",
   data: {
     modeSwitch: {},
     header: {},
@@ -19,8 +20,14 @@ const reducer = (state = initialData, action) => {
         data: {
           ...state.data,
           [action.payload.section]: action.payload.data,
-          loading: false,
         },
+        loading: false,
+      };
+    case "SET_ERROR":
+      return {
+        ...state,
+        error: action.payload,
+        loading: false,
       };
     default:
       return state;
